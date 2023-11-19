@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "assignment-21_package_catfactsnetworkmanager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ekakele/Assignment-21_Package_CatFactsNetworkManager",
+      "state" : {
+        "revision" : "a8b65a1261a35767afddc45d2410cdfb4eb27ba7",
+        "version" : "0.0.4"
+      }
+    }
+  ],
+  "version" : 2
+}

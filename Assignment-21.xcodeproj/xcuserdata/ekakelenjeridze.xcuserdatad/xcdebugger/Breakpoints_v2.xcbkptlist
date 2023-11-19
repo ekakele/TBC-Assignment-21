@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "24210D9A-B697-42A7-AA57-EC31B4D3048F"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D6E40688-8812-40E7-AA1F-7EA789D480C8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Assignment-21/Scenes/MainPage/MainPageViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "fetchCatFacts()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D6E40688-8812-40E7-AA1F-7EA789D480C8 - 173328382dd1c786"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Assignment_21.MainPageViewModel.fetchCatFacts() -&gt; ()"
+                  moduleName = "Assignment-21"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ekakelenjeridze/Desktop/TBC%20IT%20Academy%20-%20iOS%20Development/TBC%20Assignments/Module%202/Assignment-21/Assignment-21/Scenes/MainPage/MainPageViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "D6E40688-8812-40E7-AA1F-7EA789D480C8 - 2769ba93311fbab7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;Assignment_21.Fact&gt;, Swift.Error&gt;) -&gt; () in Assignment_21.MainPageViewModel.fetchCatFacts() -&gt; ()"
+                  moduleName = "Assignment-21"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ekakelenjeridze/Desktop/TBC%20IT%20Academy%20-%20iOS%20Development/TBC%20Assignments/Module%202/Assignment-21/Assignment-21/Scenes/MainPage/MainPageViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F7DC2E47-59E7-4488-AA01-FE5EAD21A2B5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Assignment-21/Scenes/MainPage/MainPageViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "fetchCatFacts()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
