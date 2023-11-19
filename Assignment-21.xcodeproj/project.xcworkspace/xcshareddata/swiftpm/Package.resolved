@@ -1,12 +1,12 @@
 {
   "pins" : [
     {
-      "identity" : "assignment-21_package_catfactsnetworkmanager",
+      "identity" : "genericnetworkmanager",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/ekakele/Assignment-21_Package_CatFactsNetworkManager",
+      "location" : "https://github.com/ekakele/GenericNetworkManager",
       "state" : {
-        "revision" : "a8b65a1261a35767afddc45d2410cdfb4eb27ba7",
-        "version" : "0.0.4"
+        "revision" : "6cd3656fcb74a997f9e7b81de9188a7e07e50931",
+        "version" : "0.0.2"
       }
     }
   ],

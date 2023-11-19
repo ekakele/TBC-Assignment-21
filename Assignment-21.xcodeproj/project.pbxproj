@@ -15,7 +15,7 @@
 		B5D8A0C72B0A16F500BC6800 /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D8A0C62B0A16F500BC6800 /* Fact.swift */; };
 		B5D8A0C92B0A171900BC6800 /* MainPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D8A0C82B0A171900BC6800 /* MainPageViewModel.swift */; };
 		B5D8A0CB2B0A17BF00BC6800 /* MainPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D8A0CA2B0A17BF00BC6800 /* MainPageTableViewCell.swift */; };
-		B5D8A0F92B0A6E3500BC6800 /* CatFactsNetworkManager in Frameworks */ = {isa = PBXBuildFile; productRef = B5D8A0F82B0A6E3500BC6800 /* CatFactsNetworkManager */; };
+		B5D8A0FC2B0AA5BF00BC6800 /* GenericNetworkManager in Frameworks */ = {isa = PBXBuildFile; productRef = B5D8A0FB2B0AA5BF00BC6800 /* GenericNetworkManager */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5D8A0F92B0A6E3500BC6800 /* CatFactsNetworkManager in Frameworks */,
+				B5D8A0FC2B0AA5BF00BC6800 /* GenericNetworkManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +140,7 @@
 			);
 			name = "Assignment-21";
 			packageProductDependencies = (
-				B5D8A0F82B0A6E3500BC6800 /* CatFactsNetworkManager */,
+				B5D8A0FB2B0AA5BF00BC6800 /* GenericNetworkManager */,
 			);
 			productName = "Assignment-21";
 			productReference = B5D8A0AD2B0A14E700BC6800 /* Assignment-21.app */;
@@ -171,7 +171,7 @@
 			);
 			mainGroup = B5D8A0A42B0A14E700BC6800;
 			packageReferences = (
-				B5D8A0F72B0A6E3500BC6800 /* XCRemoteSwiftPackageReference "Assignment-21_Package_CatFactsNetworkManager" */,
+				B5D8A0FA2B0AA5BF00BC6800 /* XCRemoteSwiftPackageReference "GenericNetworkManager" */,
 			);
 			productRefGroup = B5D8A0AE2B0A14E700BC6800 /* Products */;
 			projectDirPath = "";
@@ -416,9 +416,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B5D8A0F72B0A6E3500BC6800 /* XCRemoteSwiftPackageReference "Assignment-21_Package_CatFactsNetworkManager" */ = {
+		B5D8A0FA2B0AA5BF00BC6800 /* XCRemoteSwiftPackageReference "GenericNetworkManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ekakele/Assignment-21_Package_CatFactsNetworkManager";
+			repositoryURL = "https://github.com/ekakele/GenericNetworkManager";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 0.0.1;
@@ -427,10 +427,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B5D8A0F82B0A6E3500BC6800 /* CatFactsNetworkManager */ = {
+		B5D8A0FB2B0AA5BF00BC6800 /* GenericNetworkManager */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B5D8A0F72B0A6E3500BC6800 /* XCRemoteSwiftPackageReference "Assignment-21_Package_CatFactsNetworkManager" */;
-			productName = CatFactsNetworkManager;
+			package = B5D8A0FA2B0AA5BF00BC6800 /* XCRemoteSwiftPackageReference "GenericNetworkManager" */;
+			productName = GenericNetworkManager;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

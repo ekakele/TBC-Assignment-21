@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import CatFactsNetworkManager
+import GenericNetworkManager
 
 protocol MainPageViewModelDelegate: AnyObject {
     func factsFetched(_ facts: [Fact])
@@ -20,7 +20,7 @@ final class MainPageViewModel {
         return factModel
     }
     weak var delegate: MainPageViewModelDelegate?
-    let networkManager = CatFactsNetworkManager(limit: 100)
+    let networkManager = GenericNetworkManager(baseURL: "https://catfact.ninja/")
     
     // MARK: - Init
     init(factModel: [Fact] = [Fact]()) {
@@ -29,12 +29,12 @@ final class MainPageViewModel {
     
     // MARK: - ViewModelLifeCycle
     func viewDidLoad() {
-        fetchCatFacts()
+        fetchCatFacts(limit: 100)
     }
     
     // MARK: - Methods
-    private func fetchCatFacts() {
-        networkManager.fetchFacts(limit: 100) { [weak self] (result: Result<CatFactsResponse, Error>) in
+    private func fetchCatFacts(limit: Int) {
+        networkManager.fetchFacts(endpoint: "facts?limit=\(limit)") { [weak self] (result: Result<CatFactsResponse, Error>) in
             switch result {
             case .success(let facts):
                 self?.factModel = facts.data
