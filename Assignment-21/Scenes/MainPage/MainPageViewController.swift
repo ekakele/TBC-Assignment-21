@@ -56,7 +56,6 @@ class MainPageViewController: UIViewController {
     }
 }
 
-
 // MARK: - TableVIew DataSource
 extension MainPageViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

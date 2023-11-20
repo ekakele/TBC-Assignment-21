@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5A6A2802B0C07C600727C6B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A6A27F2B0C07C600727C6B /* TabBarController.swift */; };
 		B5D8A0B12B0A14E700BC6800 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D8A0B02B0A14E700BC6800 /* AppDelegate.swift */; };
 		B5D8A0B32B0A14E700BC6800 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D8A0B22B0A14E700BC6800 /* SceneDelegate.swift */; };
 		B5D8A0B52B0A14E700BC6800 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D8A0B42B0A14E700BC6800 /* MainPageViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B5A6A27F2B0C07C600727C6B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		B5D8A0AD2B0A14E700BC6800 /* Assignment-21.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assignment-21.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D8A0B02B0A14E700BC6800 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5D8A0B22B0A14E700BC6800 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				B5D8A0D22B0A4CCB00BC6800 /* TableViewCell */,
 				B5D8A0C82B0A171900BC6800 /* MainPageViewModel.swift */,
 				B5D8A0B42B0A14E700BC6800 /* MainPageViewController.swift */,
+				B5A6A27F2B0C07C600727C6B /* TabBarController.swift */,
 			);
 			path = MainPage;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				B5D8A0C72B0A16F500BC6800 /* Fact.swift in Sources */,
 				B5D8A0C92B0A171900BC6800 /* MainPageViewModel.swift in Sources */,
 				B5D8A0B12B0A14E700BC6800 /* AppDelegate.swift in Sources */,
+				B5A6A2802B0C07C600727C6B /* TabBarController.swift in Sources */,
 				B5D8A0B32B0A14E700BC6800 /* SceneDelegate.swift in Sources */,
 				B5D8A0CB2B0A17BF00BC6800 /* MainPageTableViewCell.swift in Sources */,
 			);
