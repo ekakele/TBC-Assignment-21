@@ -7,7 +7,11 @@
 
 import UIKit
 
-class TabBarController: UITabBarController {
+final class TabBarController: UITabBarController {
+    
+    // MARK: - Properties
+    private let factsViewController = MainPageViewController()
+    private let breedsViewController = BreedsPageViewController()
     
     // MARK: - ViewLifeCycle
     override func viewDidLoad() {
@@ -25,11 +29,20 @@ class TabBarController: UITabBarController {
     }
     
     private func setupTabBar() {
-        let factsVC = MainPageViewController()
-        let vc = self.createNav(with: "Facts", and: UIImage(systemName: "text.magnifyingglass"), vc: factsVC)
-        self.setViewControllers([vc], animated: true)
+        let mainViewController = self.createNav(
+            with: "Facts",
+            and: UIImage(systemName: "text.magnifyingglass"),
+            vc: factsViewController
+        )
+        let secondViewController = self.createNav(
+            with: "Breeds",
+            and: UIImage(systemName: "b.circle"),
+            vc: breedsViewController
+        )
+        
+        self.setViewControllers([mainViewController, secondViewController], animated: true)
         
         tabBar.tintColor = UIColor(red: 0.93, green: 0.56, blue: 0.37, alpha: 1.00)
-        tabBar.unselectedItemTintColor = UIColor(red: 1.00, green: 0.82, blue: 0.56, alpha: 1.00)
+        tabBar.unselectedItemTintColor = .systemGray
     }
 }

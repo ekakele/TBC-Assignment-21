@@ -16,9 +16,11 @@ protocol MainPageViewModelDelegate: AnyObject {
 final class MainPageViewModel {
     // MARK: - Properties
     private var factModel = [Fact]()
+    
     var facts: [Fact] {
         return factModel
     }
+    
     weak var delegate: MainPageViewModelDelegate?
     let networkManager = GenericNetworkManager(baseURL: "https://catfact.ninja/")
     
