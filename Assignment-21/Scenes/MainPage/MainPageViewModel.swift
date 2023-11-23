@@ -15,19 +15,9 @@ protocol MainPageViewModelDelegate: AnyObject {
 
 final class MainPageViewModel {
     // MARK: - Properties
-    private var factModel = [Fact]()
-    
-    var facts: [Fact] {
-        return factModel
-    }
-    
+    private var factModel: [Fact]?
     weak var delegate: MainPageViewModelDelegate?
-    let networkManager = GenericNetworkManager(baseURL: "https://catfact.ninja/")
-    
-    // MARK: - Init
-    init(factModel: [Fact] = [Fact]()) {
-        self.factModel = factModel
-    }
+    let networkManager = GenericNetworkManager(baseURL: Constants.baseURL)
     
     // MARK: - ViewModelLifeCycle
     func viewDidLoad() {
@@ -36,7 +26,7 @@ final class MainPageViewModel {
     
     // MARK: - Methods
     private func fetchCatFacts(limit: Int) {
-        networkManager.fetchFacts(endpoint: "facts?limit=\(limit)") { [weak self] (result: Result<CatFactsResponse, Error>) in
+        networkManager.fetchFacts(endpoint: Constants.factsEndpointWithLimits + "\(limit)") { [weak self] (result: Result<CatFactsResponse, Error>) in
             switch result {
             case .success(let facts):
                 self?.factModel = facts.data

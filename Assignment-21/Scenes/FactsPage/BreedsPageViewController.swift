@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BreedsPageViewController: UIViewController {
+final class BreedsPageViewController: UIViewController {
     // MARK: - Properties
     private let tableView: UITableView = {
         let tableView = UITableView()

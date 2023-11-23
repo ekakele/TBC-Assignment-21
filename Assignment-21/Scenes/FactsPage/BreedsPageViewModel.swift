@@ -15,19 +15,10 @@ protocol BreedsPageViewModelDelegate: AnyObject {
 
 final class BreedsPageViewModel {
     // MARK: - Properties
-    private var breedModel = [Breed]()
-    
-    var breeds: [Breed] {
-        return breedModel
-    }
-    
+    private var breedModel: [Breed]?
     weak var delegate: BreedsPageViewModelDelegate?
-    let networkManager = GenericNetworkManager(baseURL: "https://catfact.ninja/")
+    let networkManager = GenericNetworkManager(baseURL: Constants.baseURL)
     
-    // MARK: - Init
-    init(breedModel: [Breed] = [Breed]()) {
-        self.breedModel = breedModel
-    }
     // MARK: - ViewModelLifeCycle
     func viewDidLoad() {
         fetchCatBreeds(limit: 100)
@@ -35,7 +26,7 @@ final class BreedsPageViewModel {
     
     // MARK: - Methods
     private func fetchCatBreeds(limit: Int) {
-        networkManager.fetchFacts(endpoint: "breeds?limit=\(limit)") { [weak self] (result: Result<CatBreedsResponse, Error>) in
+        networkManager.fetchFacts(endpoint: Constants.breedsEndpointWithLimits + "\(limit)") { [weak self] (result: Result<CatBreedsResponse, Error>) in
             switch result {
             case .success(let breeds):
                 self?.breedModel = breeds.data

@@ -40,7 +40,7 @@ final class TabBarController: UITabBarController {
             vc: breedsViewController
         )
         
-        self.setViewControllers([mainViewController, secondViewController], animated: true)
+        setViewControllers([mainViewController, secondViewController], animated: true)
         
         tabBar.tintColor = UIColor(red: 0.93, green: 0.56, blue: 0.37, alpha: 1.00)
         tabBar.unselectedItemTintColor = .systemGray

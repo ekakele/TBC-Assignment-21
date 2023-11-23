@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B54268F22B0FCE8C003A0FCB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54268F12B0FCE8C003A0FCB /* Constants.swift */; };
 		B5A19F412B0CD64C00E4D045 /* BreedsPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A19F402B0CD64C00E4D045 /* BreedsPageViewModel.swift */; };
 		B5A19F432B0CD69100E4D045 /* BreedsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A19F422B0CD69100E4D045 /* BreedsPageViewController.swift */; };
 		B5A19F452B0CD70F00E4D045 /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A19F442B0CD70F00E4D045 /* Breed.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B54268F12B0FCE8C003A0FCB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B5A19F402B0CD64C00E4D045 /* BreedsPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsPageViewModel.swift; sourceTree = "<group>"; };
 		B5A19F422B0CD69100E4D045 /* BreedsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsPageViewController.swift; sourceTree = "<group>"; };
 		B5A19F442B0CD70F00E4D045 /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
@@ -53,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B54268F32B0FD4D6003A0FCB /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				B54268F12B0FCE8C003A0FCB /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		B5A19F3F2B0CD62800E4D045 /* FactsPage */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +103,7 @@
 				B5D8A0C52B0A16A200BC6800 /* App */,
 				B5D8A0CC2B0A1DB800BC6800 /* Models */,
 				B5D8A0D02B0A416A00BC6800 /* Scenes */,
+				B54268F32B0FD4D6003A0FCB /* Constants */,
 				B5D8A0C42B0A160500BC6800 /* Resources */,
 				B5D8A0BE2B0A14E700BC6800 /* Info.plist */,
 			);
@@ -241,6 +252,7 @@
 				B5D8A0B32B0A14E700BC6800 /* SceneDelegate.swift in Sources */,
 				B5D8A0CB2B0A17BF00BC6800 /* MainPageTableViewCell.swift in Sources */,
 				B5A19F432B0CD69100E4D045 /* BreedsPageViewController.swift in Sources */,
+				B54268F22B0FCE8C003A0FCB /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

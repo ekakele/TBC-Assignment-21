@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainPageViewController: UIViewController {
+final class MainPageViewController: UIViewController {
     // MARK: - Properties
     private let tableView: UITableView = {
         let tableView = UITableView()

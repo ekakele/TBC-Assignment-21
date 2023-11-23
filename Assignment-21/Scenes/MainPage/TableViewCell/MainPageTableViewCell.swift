@@ -58,10 +58,10 @@ final class MainPageTableViewCell: UITableViewCell {
         cellStackView.addArrangedSubview(factLabel)
         
         NSLayoutConstraint.activate([
-            cellStackView.topAnchor.constraint(equalTo: self.topAnchor),
-            cellStackView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            cellStackView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            cellStackView.bottomAnchor.constraint(equalTo: self.bottomAnchor)
+            cellStackView.topAnchor.constraint(equalTo: topAnchor),
+            cellStackView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            cellStackView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            cellStackView.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
     }
 }
